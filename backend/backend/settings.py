@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-+2+94*@8jya#gi9b8(uschq@p7p5o#*^2&ts7pd669^5z)rycz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -124,3 +126,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# MongoDB Configuration
+MONGO_URI = "mongodb://localhost:27017/"  # Replace with your MongoDB URI
+MONGO_DB_NAME = "trendhunt"  # Replace with your database name
